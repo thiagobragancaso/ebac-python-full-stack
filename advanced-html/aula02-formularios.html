@@ -1,0 +1,85 @@
+<!-- Arquivo desenvolvido na aula de formulários -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Avanced-HTML - Aula 02 - Formulários</title>
+</head>
+<body>
+	<header>
+		<h2>Fale Conosco</h2>
+	</header>
+
+	<section>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="sobre">Sobre</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<h1>Contato</h1>
+			<p>Preencha os campos abaixos</p>
+
+			<form method="post">
+				<div>
+					<label for="nome">Nome</label><br>
+					<input type="text" name="nome" id="nome" placeholder="Digite o seu nome aqui">
+				</div>
+				
+				<div>
+					<label for="email">E-mail</label><br>
+					<input type="email" name="email" id="email" placeholder="Digite o seu e-mail aqui">
+				</div>
+
+				<div>
+					<label for="mensagem">Mensagem</label><br>
+					<textarea name="mensagem" id="mensagem" rows="10" placeholder="Digite a sua mensagem aqui"></textarea>
+				</div>
+
+				<div>
+					<label>Qual o seu sexo?</label>
+					<input type="radio" name="sexo" value="M"> Masculino
+					<input type="radio" name="sexo" value="F"> Feminino
+				</div>
+
+				<div>
+					<label>Quais são suas hard skills?</label><br>
+					<input type="checkbox" name="hard_skills" value="python"> Python
+					<input type="checkbox" name="hard_skills" value="spark"> Apache Spark
+					<input type="checkbox" name="hard_skills" value="kafka"> Apache Kafka
+					<input type="checkbox" name="hard_skills" value="airflow"> Apache Airflow
+					<input type="checkbox" name="hard_skills" value="docker"> Docker
+					<input type="checkbox" name="hard_skills" value="mongodb"> MongoDB
+					<input type="checkbox" name="hard_skills" value="dbt"> Dbt
+				<div>
+
+				<div>
+					<label>Qual é o nível do seu último cargo?</label>
+					<select name="nivel_cargo">
+						<option value="data_engineer_jr" selected>Data Engineer Jr</option>
+						<option value="data_engineer_pl">Data Engineer Pl</option>
+						<option value="data_engineer_sr">Data Engineer Sr</option>\
+					</select>
+				</div>
+
+				<div>
+					<input type="submit" value="Enviar">
+				</div>
+			
+			</form>
+
+		</article>
+	</section>
+
+
+	<section>
+		<p style="color: red;" title="Eu sou uma dica de ferramenta">Este é um parágrafo vermelho</p>
+	</section>
+</body>
+</html>
